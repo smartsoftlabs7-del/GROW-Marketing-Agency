@@ -1,0 +1,1667 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>GROW Marketing Agency | Enterprise-Grade Growth Engine for Home-Service Contractors & US SMBs</title>
+  <meta name="description" content="GROW Marketing Agency is the premier growth and digital infrastructure partner for US-based home-service contractors and SMBs. Scalable customer acquisition, hyper-fast web infrastructure, and territory exclusivity.">
+  <meta name="keywords" content="contractor marketing agency, home service digital marketing, HVAC marketing, roofing SEO, plumbing leads, enterprise SMB growth, local SEO funnel">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="GROW Marketing Agency | Scale Your Local Business">
+  <meta property="og:description" content="Enterprise-grade digital campaigns, lightning-fast web infrastructure, and guaranteed revenue expansion for US contractors.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons for High-Tech B2B UI -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark text-slate antialiased selection:bg-brand selection:text-black">
+
+  <!-- Custom Magnetic Cursor -->
+  <div class="custom-cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="custom-cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- Global Reading Progress Bar -->
+  <div class="scroll-progress-container" aria-hidden="true">
+    <div class="scroll-progress-bar" id="progressBar"></div>
+  </div>
+
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" role="region" aria-label="Territory status alert">
+    <div class="container marquee-content">
+      <div class="announcement-pill">
+        <span class="live-dot pulse"></span>
+        <span class="announcement-badge">TERRITORY LOCK</span>
+      </div>
+      <p class="announcement-text">
+        <strong>Strict 1-Contractor-Per-Metro Exclusivity:</strong> 2 US metro territories remaining for Q1/Q2 deployment. We never market competing contractors in your market.
+      </p>
+      <a href="#territory-checker" class="announcement-link">
+        Check Your Metro <i class="fa-solid fa-arrow-right-long text-xs ml-1"></i>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Sticky Glassmorphism Header / Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      
+      <!-- Logo Component (GROW Marketing Agency) -->
+      <a href="#hero" class="brand-logo" aria-label="GROW Marketing Agency Home">
+        <div class="logo-mark">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+            <defs>
+              <linearGradient id="growGlowGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#00D2FF" />
+                <stop offset="50%" stop-color="#00E599" />
+                <stop offset="100%" stop-color="#70FF00" />
+              </linearGradient>
+              <filter id="neonBlur" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="3" result="blur" />
+                <feComposite in="SourceGraphic" in2="blur" operator="over" />
+              </filter>
+            </defs>
+            <!-- Hexagonal Tech Lattice Base -->
+            <path d="M22 3L39 12.8V32.2L22 42L5 32.2V12.8L22 3Z" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" fill="rgba(8,12,20,0.8)" />
+            <!-- Dynamic Growth Bars & Upward Vector Apex -->
+            <rect x="12" y="24" width="4.5" height="10" rx="1.5" fill="rgba(255,255,255,0.25)" />
+            <rect x="19" y="18" width="4.5" height="16" rx="1.5" fill="url(#growGlowGrad)" />
+            <rect x="26" y="12" width="4.5" height="22" rx="1.5" fill="url(#growGlowGrad)" />
+            <!-- Upward Growth Arrow -->
+            <path d="M12 21L21.5 11.5L28 18L35 7" stroke="#00E599" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#neonBlur)" />
+            <path d="M30 7H35V12" stroke="#00E599" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="logo-typography">
+          <div class="logo-main-text">
+            GROW<span class="logo-dot">.</span>
+          </div>
+          <span class="logo-sub-text">MARKETING AGENCY</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#roi-calculator" class="nav-link">ROI Calculator <span class="nav-badge-pill">Interactive</span></a></li>
+          <li><a href="#tech-showcase" class="nav-link">Tech Showcase</a></li>
+          <li><a href="#engine" class="nav-link">HyperScale™ Engine</a></li>
+          <li><a href="#case-studies" class="nav-link">Results</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Items -->
+      <div class="header-actions">
+        <div class="status-indicator-badge">
+          <span class="live-dot pulse"></span>
+          <span class="status-text">Territory: <strong>Open</strong></span>
+        </div>
+        <a href="#roi-calculator" class="btn btn-outline btn-sm magnetic-btn">
+          <i class="fa-solid fa-calculator text-brand mr-1"></i> Simulate ROI
+        </a>
+        <button class="btn btn-brand btn-sm magnetic-btn" id="headerCtaBtn" onclick="openOnboardingModal('Header Consultation Trigger')">
+          <span>Scale Today</span>
+          <i class="fa-solid fa-bolt text-xs ml-1"></i>
+        </button>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Slide-Down Menu -->
+    <div class="mobile-menu-drawer" id="mobileMenuDrawer">
+      <div class="mobile-nav-content">
+        <ul class="mobile-nav-links">
+          <li><a href="#hero" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="#roi-calculator" class="mobile-nav-link"><i class="fa-solid fa-calculator text-brand"></i> ROI Calculator</a></li>
+          <li><a href="#tech-showcase" class="mobile-nav-link"><i class="fa-solid fa-cubes-stacked text-cyan"></i> White-Label Tech Showcase</a></li>
+          <li><a href="#engine" class="mobile-nav-link"><i class="fa-solid fa-gears text-brand"></i> HyperScale™ Engine</a></li>
+          <li><a href="#case-studies" class="mobile-nav-link"><i class="fa-solid fa-chart-line text-emerald"></i> Verified Contractor Results</a></li>
+          <li><a href="#territory-checker" class="mobile-nav-link"><i class="fa-solid fa-map-location-dot"></i> Check Territory</a></li>
+          <li><a href="#faq" class="mobile-nav-link"><i class="fa-solid fa-circle-question"></i> Contractor FAQs</a></li>
+        </ul>
+        <div class="mobile-menu-cta-wrap">
+          <button class="btn btn-brand btn-block" onclick="openOnboardingModal('Mobile Navigation CTA')">
+            <i class="fa-solid fa-bolt mr-2"></i> Scale Your Business Today
+          </button>
+          <a href="https://wa.me/18005554769?text=Hello%20GROW%20Team!%20I%20am%20a%20US%20contractor%20looking%20to%20scale%20my%20territory." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-block mt-3">
+            <i class="fa-brands fa-whatsapp mr-2"></i> Instant WhatsApp Dispatch
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================================= -->
+    <!-- 1. HERO SECTION: Fast-Loading Cinematic Video Background & Enterprise CTA -->
+    <!-- ========================================================================= -->
+    <section class="hero-section" id="hero">
+      
+      <!-- Video Background Container with Fallback & Dual Gradients -->
+      <div class="video-background-wrapper" aria-hidden="true">
+        <!-- 
+          High-performance video stream displaying modern commercial contractors, 
+          hightech diagnostics, roofing drone inspection, and dispatch operations.
+        -->
+        <video 
+          class="hero-video" 
+          id="heroVideo" 
+          autoplay 
+          muted 
+          loop 
+          playsinline 
+          preload="auto"
+          poster="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1920&q=80">
+          <!-- Multi-source HD video fallback -->
+          <source src="https://assets.mixkit.co/videos/preview/mixkit-construction-workers-looking-at-blueprints-42674-large.mp4" type="video/mp4">
+        </video>
+        
+        <!-- Video Ambient Overlays for Cinematic Contrast -->
+        <div class="video-overlay-gradient"></div>
+        <div class="video-grid-pattern"></div>
+        <div class="video-scanlines"></div>
+      </div>
+
+      <!-- Hero Video Controls Pill -->
+      <div class="video-control-pill" aria-label="Video controls">
+        <button id="videoToggleBtn" class="video-ctrl-btn" title="Pause or Play Background Video" aria-label="Toggle background video playback">
+          <i class="fa-solid fa-pause" id="videoToggleIcon"></i>
+          <span class="video-ctrl-label" id="videoToggleText">4K Footage Active</span>
+        </button>
+      </div>
+
+      <div class="container hero-content-container">
+        
+        <!-- Top Tech Eyebrow / Trust Signal -->
+        <div class="hero-eyebrow-wrapper">
+          <div class="eyebrow-pill">
+            <span class="eyebrow-icon-box">
+              <i class="fa-solid fa-shield-halved text-brand"></i>
+            </span>
+            <span class="eyebrow-text">US SMB & HOME-SERVICE CONTRACTOR INFRASTRUCTURE</span>
+            <span class="eyebrow-divider">/</span>
+            <span class="eyebrow-accent">EXCLUSIVE TERRITORY MODEL</span>
+          </div>
+        </div>
+
+        <!-- Headline & Subheadline -->
+        <h1 class="hero-title">
+          Accelerate Your Local Business Growth with 
+          <span class="text-gradient-brand">Enterprise-Grade</span> 
+          Digital Campaigns
+        </h1>
+
+        <p class="hero-subtitle">
+          We engineer high-ticket customer acquisition infrastructure for HVAC, Roofing, Plumbing, and Electrical contractors. Stop wasting budget on vanity clicks — deploy high-intent Google LSA, programmatic local SEO, and sub-second landing pages engineered to book high-margin jobs.
+        </p>
+
+        <!-- CTA Button Group & Dynamic Logo-Accent CTA -->
+        <div class="hero-cta-group">
+          <button class="btn btn-brand btn-lg hero-cta-btn magnetic-btn" id="heroScaleCtaBtn" onclick="openOnboardingModal('Hero Scale CTA')">
+            <span class="btn-text">Scale Your Business Today</span>
+            <span class="btn-arrow-icon">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+            <span class="btn-glow-reflection"></span>
+          </button>
+
+          <a href="#roi-calculator" class="btn btn-secondary btn-lg magnetic-btn">
+            <i class="fa-solid fa-sliders text-brand mr-2"></i>
+            <span>Calculate Projected Revenue</span>
+          </a>
+
+          <!-- Quick WhatsApp Direct Dispatch Button -->
+          <a href="https://wa.me/18005554769?text=Hi%20GROW%20Agency!%20I'm%20ready%20to%20scale%20my%20service%20business.%20Let's%20check%20territory%20availability." 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn btn-ghost-whatsapp btn-lg magnetic-btn"
+             title="Instant Contractor Onboarding via WhatsApp">
+            <i class="fa-brands fa-whatsapp text-emerald text-lg mr-2"></i>
+            <span>Instant Dispatch</span>
+          </a>
+        </div>
+
+        <!-- Floating UI Cards with Real Verified Contractor Metrics -->
+        <div class="hero-floating-cards" aria-hidden="true">
+          
+          <!-- Floating Card 1: 200% Local Leads -->
+          <div class="floating-card floating-card-left float-anim-1">
+            <div class="card-glow-edge"></div>
+            <div class="floating-card-icon bg-emerald-trans">
+              <i class="fa-solid fa-arrow-trend-up text-brand"></i>
+            </div>
+            <div class="floating-card-data">
+              <div class="floating-card-highlight">200% Increase in Local Leads</div>
+              <div class="floating-card-caption">Apex Roofing & Solar · Dallas Metro (90 Days)</div>
+            </div>
+            <div class="live-pulse-badge">Verified</div>
+          </div>
+
+          <!-- Floating Card 2: Revenue Pipeline Acceleration -->
+          <div class="floating-card floating-card-right float-anim-2">
+            <div class="card-glow-edge"></div>
+            <div class="floating-card-icon bg-cyan-trans">
+              <i class="fa-solid fa-dollar-sign text-cyan"></i>
+            </div>
+            <div class="floating-card-data">
+              <div class="floating-card-highlight">$1.42M Inbound Pipeline</div>
+              <div class="floating-card-caption">Vanguard Mechanical HVAC · Atlanta, GA</div>
+            </div>
+            <div class="live-pulse-badge badge-cyan">Closed</div>
+          </div>
+
+          <!-- Floating Card 3: Google Map Pack #1 Velocity -->
+          <div class="floating-card floating-card-center float-anim-3">
+            <div class="card-glow-edge"></div>
+            <div class="floating-card-icon bg-amber-trans">
+              <i class="fa-solid fa-location-dot text-amber"></i>
+            </div>
+            <div class="floating-card-data">
+              <div class="floating-card-highlight">#1 Local 3-Pack Dominance</div>
+              <div class="floating-card-caption">Precision Plumbing Services · Denver Metro</div>
+            </div>
+            <div class="live-pulse-badge badge-amber">42 Days</div>
+          </div>
+
+        </div>
+
+        <!-- Trust Badges & Metrics Bar -->
+        <div class="hero-stats-bar">
+          <div class="stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-prefix">$</span>
+              <span class="stat-number" data-target="182">0</span>
+              <span class="stat-suffix">M+</span>
+            </div>
+            <div class="stat-label">Contractor Revenue Generated</div>
+          </div>
+
+          <div class="stat-divider"></div>
+
+          <div class="stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="42">0</span>
+              <span class="stat-suffix">Days</span>
+            </div>
+            <div class="stat-label">Avg. Time to #1 Map Pack</div>
+          </div>
+
+          <div class="stat-divider"></div>
+
+          <div class="stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="98">0</span>
+              <span class="stat-decimal">.4</span>
+              <span class="stat-suffix">%</span>
+            </div>
+            <div class="stat-label">Annual Client Retention</div>
+          </div>
+
+          <div class="stat-divider"></div>
+
+          <div class="stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="4">0</span>
+              <span class="stat-decimal">.2</span>
+              <span class="stat-suffix">x</span>
+            </div>
+            <div class="stat-label">Average Inbound ROAS Multiple</div>
+          </div>
+        </div>
+
+        <!-- Official Industry Accreditation Logos -->
+        <div class="hero-partner-strip">
+          <div class="partner-label">ENTERPRISE PARTNERSHIPS & TRADE ALLIANCES:</div>
+          <div class="partner-logos-row">
+            <div class="partner-badge"><i class="fa-brands fa-google mr-1"></i> Google Premier Partner</div>
+            <div class="partner-badge"><i class="fa-brands fa-meta mr-1"></i> Meta Growth Partner</div>
+            <div class="partner-badge"><i class="fa-solid fa-wrench mr-1"></i> PHCC Allied Partner</div>
+            <div class="partner-badge"><i class="fa-solid fa-temperature-arrow-up mr-1"></i> ACCA Commercial Member</div>
+            <div class="partner-badge"><i class="fa-solid fa-house-chimney-crack mr-1"></i> NRCA Certified Growth</div>
+            <div class="partner-badge"><i class="fa-solid fa-star text-amber mr-1"></i> 4.9/5 Clutch Rating (350+ Reviews)</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Hero Bottom Scroll Indicator -->
+      <a href="#roi-calculator" class="hero-scroll-cue" aria-label="Scroll down to ROI Calculator">
+        <span class="scroll-cue-text">Explore Growth Architecture</span>
+        <div class="mouse-icon">
+          <div class="mouse-wheel"></div>
+        </div>
+      </a>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 2. INTERACTIVE CONTRACTOR ROI CALCULATOR (Mockup & Real-Time Engine)      -->
+    <!-- ========================================================================= -->
+    <section class="section-spacing roi-section" id="roi-calculator">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header text-center max-w-3xl mx-auto">
+          <div class="section-pill">
+            <i class="fa-solid fa-calculator text-brand"></i>
+            <span>TRANSPARENT VALUE MODELING</span>
+          </div>
+          <h2 class="section-title">
+            Interactive Contractor <span class="text-gradient-brand">ROI Calculator</span>
+          </h2>
+          <p class="section-desc">
+            Adjust the sliders below based on your current operational metrics. See exact mathematical revenue projections when your business transitions to GROW’s high-converting digital infrastructure.
+          </p>
+        </div>
+
+        <!-- ROI Calculator Glassmorphism Container -->
+        <div class="calculator-glass-card" id="calculatorApp">
+          
+          <div class="calculator-grid">
+            
+            <!-- Left Column: Interactive Controls & Preset Selectors -->
+            <div class="calc-controls-col">
+              
+              <!-- Trade Preset Quick Selector -->
+              <div class="control-group">
+                <div class="control-label-row">
+                  <label class="control-label" for="tradePresetSelect">
+                    <i class="fa-solid fa-screwdriver-wrench text-brand mr-1"></i>
+                    Select Your Trade / Industry Preset:
+                  </label>
+                  <span class="control-tag">Auto-Calibrate</span>
+                </div>
+                <div class="trade-preset-buttons" role="radiogroup" aria-label="Contractor Trade Presets">
+                  <button type="button" class="preset-btn active" data-trade="hvac" data-ticket="8500" data-traffic="3200" data-conv="1.8" data-close="28">
+                    <i class="fa-solid fa-fan"></i>
+                    <span>HVAC Pro ($8.5k Avg)</span>
+                  </button>
+                  <button type="button" class="preset-btn" data-trade="roofing" data-ticket="12500" data-traffic="2800" data-conv="1.4" data-close="24">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <span>Roofing / Solar ($12.5k)</span>
+                  </button>
+                  <button type="button" class="preset-btn" data-trade="plumbing" data-ticket="3200" data-traffic="4500" data-conv="2.2" data-close="35">
+                    <i class="fa-solid fa-faucet-drip"></i>
+                    <span>Plumbing / Drain ($3.2k)</span>
+                  </button>
+                  <button type="button" class="preset-btn" data-trade="electrical" data-ticket="3800" data-traffic="2500" data-conv="2.0" data-close="30">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Electrical ($3.8k)</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Slider 1: Monthly Website Traffic -->
+              <div class="control-group">
+                <div class="control-label-row">
+                  <label class="control-label" for="trafficSlider">
+                    <i class="fa-solid fa-users text-cyan mr-1"></i> Monthly Website Visitors
+                  </label>
+                  <div class="slider-val-box">
+                    <span id="trafficDisplay" class="slider-dynamic-val font-mono">3,200</span>
+                    <span class="val-unit">visitors/mo</span>
+                  </div>
+                </div>
+                <div class="slider-wrapper">
+                  <input type="range" id="trafficSlider" min="500" max="25000" step="100" value="3200" class="range-slider">
+                  <div class="slider-ticks">
+                    <span>500</span>
+                    <span>5k</span>
+                    <span>10k</span>
+                    <span>15k</span>
+                    <span>25k</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slider 2: Average Service Ticket Value ($) -->
+              <div class="control-group">
+                <div class="control-label-row">
+                  <label class="control-label" for="ticketSlider">
+                    <i class="fa-solid fa-receipt text-brand mr-1"></i> Average Service Ticket Value
+                  </label>
+                  <div class="slider-val-box">
+                    <span class="val-unit">$</span>
+                    <span id="ticketDisplay" class="slider-dynamic-val font-mono">8,500</span>
+                  </div>
+                </div>
+                <div class="slider-wrapper">
+                  <input type="range" id="ticketSlider" min="500" max="25000" step="250" value="8500" class="range-slider">
+                  <div class="slider-ticks">
+                    <span>$500</span>
+                    <span>$5k</span>
+                    <span>$10k</span>
+                    <span>$15k</span>
+                    <span>$25k</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slider 3: Current Lead Conversion Rate (%) -->
+              <div class="control-group">
+                <div class="control-label-row">
+                  <label class="control-label" for="convSlider">
+                    <i class="fa-solid fa-filter text-amber mr-1"></i> Current Traffic-to-Lead Rate
+                  </label>
+                  <div class="slider-val-box">
+                    <span id="convDisplay" class="slider-dynamic-val font-mono">1.8</span>
+                    <span class="val-unit">%</span>
+                  </div>
+                </div>
+                <div class="slider-wrapper">
+                  <input type="range" id="convSlider" min="0.5" max="6.0" step="0.1" value="1.8" class="range-slider">
+                  <div class="slider-ticks">
+                    <span>0.5% (Typical)</span>
+                    <span>2.5%</span>
+                    <span>6.0%</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slider 4: Sales Close Rate (%) -->
+              <div class="control-group">
+                <div class="control-label-row">
+                  <label class="control-label" for="closeSlider">
+                    <i class="fa-solid fa-handshake-angle text-emerald mr-1"></i> Estimate-to-Signed Close Rate
+                  </label>
+                  <div class="slider-val-box">
+                    <span id="closeDisplay" class="slider-dynamic-val font-mono">28</span>
+                    <span class="val-unit">%</span>
+                  </div>
+                </div>
+                <div class="slider-wrapper">
+                  <input type="range" id="closeSlider" min="10" max="60" step="1" value="28" class="range-slider">
+                  <div class="slider-ticks">
+                    <span>10%</span>
+                    <span>28% (Avg)</span>
+                    <span>60% (Elite)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tech Multiplier Toggle Info -->
+              <div class="multiplier-info-box">
+                <div class="info-icon"><i class="fa-solid fa-circle-info text-cyan"></i></div>
+                <div class="info-text">
+                  <strong>The GROW Infrastructure Impact:</strong> Our sub-second headless pages, instant SMS lead response under 60 seconds, and targeted Google LSA integration elevate average conversion from <strong>1.8% to 5.4%</strong> without doubling your ad spend.
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Right Column: Live Glassmorphism Revenue Projection Board -->
+            <div class="calc-results-col">
+              
+              <div class="results-inner-card">
+                
+                <div class="results-header-row">
+                  <div>
+                    <span class="results-badge">PROJECTION ENGINE v4.2</span>
+                    <h3 class="results-headline">12-Month Net Revenue Growth</h3>
+                  </div>
+                  <div class="roi-pill" id="roiMultiplierBadge">
+                    <span class="roi-tag">PROJECTED ROI</span>
+                    <span class="roi-num font-mono" id="roiMultiple">11.4x</span>
+                  </div>
+                </div>
+
+                <!-- Giant Dynamic Revenue Display -->
+                <div class="hero-growth-display">
+                  <div class="growth-amount-row">
+                    <span class="currency-symbol">$</span>
+                    <span class="growth-number font-mono" id="annualGrowthDisplay">428,400</span>
+                    <span class="growth-period">/ year</span>
+                  </div>
+                  <div class="growth-delta-pill">
+                    <i class="fa-solid fa-arrow-up text-brand"></i>
+                    <span>+$<span id="monthlyNetGrowth" class="font-mono">35,700</span> Net Additional Monthly Cashflow</span>
+                  </div>
+                </div>
+
+                <!-- Head-to-Head Comparison: Current vs GROW Engine -->
+                <div class="comparison-breakdown">
+                  
+                  <div class="comparison-card status-quo">
+                    <div class="comp-title">
+                      <span>Status Quo Website</span>
+                      <span class="badge-status-quo">Current State</span>
+                    </div>
+                    <div class="comp-metric-row">
+                      <span class="metric-name">Monthly Inbound Leads</span>
+                      <span class="metric-val font-mono" id="currLeads">58 leads</span>
+                    </div>
+                    <div class="comp-metric-row">
+                      <span class="metric-name">Closed Jobs / Month</span>
+                      <span class="metric-val font-mono" id="currJobs">16 jobs</span>
+                    </div>
+                    <div class="comp-metric-row border-top">
+                      <span class="metric-name">Monthly Gross Revenue</span>
+                      <span class="metric-val font-mono" id="currMonthlyRev">$137,760</span>
+                    </div>
+                  </div>
+
+                  <div class="comparison-card grow-accelerated">
+                    <div class="comp-title">
+                      <span>With GROW Engine</span>
+                      <span class="badge-grow-boost"><i class="fa-solid fa-bolt mr-1"></i> +210% Efficiency</span>
+                    </div>
+                    <div class="comp-metric-row">
+                      <span class="metric-name">Monthly Inbound Leads</span>
+                      <span class="metric-val font-mono text-brand" id="growLeads">173 leads</span>
+                    </div>
+                    <div class="comp-metric-row">
+                      <span class="metric-name">Closed Jobs / Month</span>
+                      <span class="metric-val font-mono text-cyan" id="growJobs">58 jobs</span>
+                    </div>
+                    <div class="comp-metric-row border-top">
+                      <span class="metric-name">Projected Monthly Rev</span>
+                      <span class="metric-val font-mono text-emerald" id="growMonthlyRev">$493,000</span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Animated SVG Comparison Chart -->
+                <div class="calc-chart-container">
+                  <div class="chart-legend">
+                    <span class="legend-item"><span class="legend-dot current-dot"></span> Current Baseline</span>
+                    <span class="legend-item"><span class="legend-dot grow-dot"></span> GROW Engineered Path</span>
+                  </div>
+                  <div class="svg-chart-wrapper">
+                    <svg viewBox="0 0 460 120" class="projection-svg" preserveAspectRatio="none">
+                      <defs>
+                        <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0%" stop-color="#00E599" stop-opacity="0.45" />
+                          <stop offset="100%" stop-color="#00E599" stop-opacity="0.0" />
+                        </linearGradient>
+                      </defs>
+                      <!-- Horizontal Grid Lines -->
+                      <line x1="10" y1="20" x2="450" y2="20" stroke="rgba(255,255,255,0.06)" stroke-dasharray="4" />
+                      <line x1="10" y1="60" x2="450" y2="60" stroke="rgba(255,255,255,0.06)" stroke-dasharray="4" />
+                      <line x1="10" y1="100" x2="450" y2="100" stroke="rgba(255,255,255,0.06)" stroke-dasharray="4" />
+                      <!-- Status Quo Flat Line -->
+                      <path d="M 10 95 Q 120 92, 230 94 T 450 90" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-dasharray="5 3" />
+                      <!-- GROW Exponential Curve Area -->
+                      <path d="M 10 95 Q 120 80, 230 45 T 450 15 L 450 115 L 10 115 Z" fill="url(#chartGrad)" />
+                      <!-- GROW Curve Line -->
+                      <path d="M 10 95 Q 120 80, 230 45 T 450 15" fill="none" stroke="#00E599" stroke-width="3.5" class="chart-animated-path" />
+                      <!-- Target Marker Node -->
+                      <circle cx="450" cy="15" r="5" fill="#00E599" filter="drop-shadow(0 0 8px #00E599)" />
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Calculator Direct Action Button -->
+                <div class="calc-action-wrap">
+                  <button type="button" class="btn btn-brand btn-block btn-lg magnetic-btn" id="lockInRoiBtn" onclick="openOnboardingWithCalculatedData()">
+                    <span>Lock In This Projected Revenue</span>
+                    <i class="fa-solid fa-arrow-right-long ml-2"></i>
+                  </button>
+                  <p class="calc-disclaimer">
+                    <i class="fa-solid fa-lock text-brand mr-1"></i> Based on aggregate data from 350+ US contractor partners. Non-binding conservative model.
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 3. WHITE-LABEL TECH SHOWCASE: Minimal Grid Portfolio & Micro-Interactions -->
+    <!-- ========================================================================= -->
+    <section class="section-spacing showcase-section" id="tech-showcase">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header text-center max-w-3xl mx-auto">
+          <div class="section-pill">
+            <i class="fa-solid fa-microchip text-cyan"></i>
+            <span>PROPRIETARY CONTRACTOR ARCHITECTURE</span>
+          </div>
+          <h2 class="section-title">
+            White-Label <span class="text-gradient-cyan">Tech Showcase</span>
+          </h2>
+          <p class="section-desc">
+            We don’t use generic drag-and-drop page builders that bleed mobile visitors. We build bespoke digital infrastructure engineered specifically for emergency service dispatch and high-ticket installation contracts.
+          </p>
+        </div>
+
+        <!-- Filter / Feature Category Tabs -->
+        <div class="showcase-tabs-container">
+          <div class="showcase-tabs" role="tablist">
+            <button class="showcase-tab-btn active" data-target="all" role="tab" aria-selected="true">
+              <i class="fa-solid fa-border-all mr-2"></i> All Core Infrastructure
+            </button>
+            <button class="showcase-tab-btn" data-target="web-builds" role="tab" aria-selected="false">
+              <i class="fa-solid fa-bolt mr-2 text-brand"></i> Lightning-Fast Web Builds
+            </button>
+            <button class="showcase-tab-btn" data-target="seo-funnels" role="tab" aria-selected="false">
+              <i class="fa-solid fa-map-location-dot mr-2 text-cyan"></i> Automated SEO Funnels
+            </button>
+            <button class="showcase-tab-btn" data-target="landing-pages" role="tab" aria-selected="false">
+              <i class="fa-solid fa-bullseye mr-2 text-emerald"></i> High-Converting Landing Pages
+            </button>
+          </div>
+        </div>
+
+        <!-- 3-Column Minimal Grid Portfolio -->
+        <div class="showcase-grid" id="showcaseGrid">
+          
+          <!-- Card 1: Lightning-Fast Web Builds -->
+          <article class="showcase-card tilt-card" data-category="web-builds">
+            <div class="card-inner">
+              <div class="card-media-wrap">
+                <img 
+                  src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" 
+                  alt="High-speed contractor dispatch web application" 
+                  class="showcase-img"
+                  loading="lazy">
+                <div class="media-overlay">
+                  <div class="media-stat-pill">
+                    <span class="live-dot pulse"></span>
+                    <span>100/100 Core Web Vitals</span>
+                  </div>
+                </div>
+                <div class="tech-tag-row">
+                  <span class="tech-tag">Sub-800ms Load</span>
+                  <span class="tech-tag">Headless Edge</span>
+                  <span class="tech-tag">PWA Ready</span>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <div class="card-eyebrow">
+                  <i class="fa-solid fa-gauge-high text-brand"></i> INFRASTRUCTURE PILLAR 01
+                </div>
+                <h3 class="card-title">Lightning-Fast Web Builds</h3>
+                <p class="card-text">
+                  Contractor sites built on legacy WordPress plugins drop 40% of mobile homeowners within 3 seconds. Our custom edge-rendered stack loads instantaneously, even on rural 4G connections, driving emergency plumbing and HVAC dispatch calls.
+                </p>
+
+                <div class="interactive-metric-box">
+                  <div class="metric-pill">
+                    <span class="metric-num">0.6s</span>
+                    <span class="metric-desc">Largest Contentful Paint</span>
+                  </div>
+                  <div class="metric-pill">
+                    <span class="metric-num">99.8%</span>
+                    <span class="metric-desc">Uptime Guarantee</span>
+                  </div>
+                  <div class="metric-pill">
+                    <span class="metric-num">3.2x</span>
+                    <span class="metric-desc">Mobile Call Lift</span>
+                  </div>
+                </div>
+
+                <div class="card-hover-action">
+                  <button class="card-action-link" onclick="openTechDetailModal('web-builds')">
+                    <span>Inspect Speed Benchmark Specs</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Automated SEO Funnels -->
+          <article class="showcase-card tilt-card" data-category="seo-funnels">
+            <div class="card-inner">
+              <div class="card-media-wrap">
+                <img 
+                  src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" 
+                  alt="Contractor Local SEO Heatmap and Google Maps 3-Pack Optimization" 
+                  class="showcase-img"
+                  loading="lazy">
+                <div class="media-overlay">
+                  <div class="media-stat-pill badge-cyan">
+                    <span class="live-dot pulse-cyan"></span>
+                    <span>Geo-Grid 3-Pack Takeover</span>
+                  </div>
+                </div>
+                <div class="tech-tag-row">
+                  <span class="tech-tag">Programmatic Suburbs</span>
+                  <span class="tech-tag">Review Velocity</span>
+                  <span class="tech-tag">LSA Sync</span>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <div class="card-eyebrow">
+                  <i class="fa-solid fa-map-pin text-cyan"></i> INFRASTRUCTURE PILLAR 02
+                </div>
+                <h3 class="card-title">Automated SEO Funnels</h3>
+                <p class="card-text">
+                  Own your entire county without paying for every single click. We deploy programmatic location silos across 40+ micro-suburbs alongside automated review generation to anchor your business as the undisputed #1 Google Map Pack choice.
+                </p>
+
+                <div class="interactive-metric-box">
+                  <div class="metric-pill">
+                    <span class="metric-num text-cyan">#1 Rank</span>
+                    <span class="metric-desc">In 18 Target Zip Codes</span>
+                  </div>
+                  <div class="metric-pill">
+                    <span class="metric-num text-cyan">+340%</span>
+                    <span class="metric-desc">Organic Map Pack Calls</span>
+                  </div>
+                  <div class="metric-pill">
+                    <span class="metric-num text-cyan">$0</span>
+                    <span class="metric-desc">Per-Click Organic Cost</span>
+                  </div>
+                </div>
+
+                <div class="card-hover-action">
+                  <button class="card-action-link" onclick="openTechDetailModal('seo-funnels')">
+                    <span>Explore Geo-Fenced Silo Architecture</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: High-Converting Landing Pages -->
+          <article class="showcase-card tilt-card" data-category="landing-pages">
+            <div class="card-inner">
+              <div class="card-media-wrap">
+                <img 
+                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" 
+                  alt="High-converting contractor lead generation landing page" 
+                  class="showcase-img"
+                  loading="lazy">
+                <div class="media-overlay">
+                  <div class="media-stat-pill badge-emerald">
+                    <span class="live-dot pulse-emerald"></span>
+                    <span>Dynamic DNI & Instant Quote</span>
+                  </div>
+                </div>
+                <div class="tech-tag-row">
+                  <span class="tech-tag">DNI Tracking</span>
+                  <span class="tech-tag">Micro-Estimator</span>
+                  <span class="tech-tag">Sticky Call Bar</span>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <div class="card-eyebrow">
+                  <i class="fa-solid fa-crosshairs text-emerald"></i> INFRASTRUCTURE PILLAR 03
+                </div>
+                <h3 class="card-title">High-Converting Landing Pages</h3>
+                <p class="card-text">
+                  Tired of contact forms that go to die in spam folders? Our landing pages incorporate interactive repair-cost estimators, click-to-call mobile stickies, and dynamic phone number insertion (DNI) to route every lead directly to your dispatcher’s headset.
+                </p>
+
+                <div class="interactive-metric-box">
+                  <div class="metric-pill">
+                    <span class="metric-num text-brand">14.8%</span>
+                    <span class="metric-desc">Average Conversion Rate</span>
+                  </div>
+                  <div class="metric-pill">
+                    <span class="metric-num text-brand">&lt; 45s</span>
+                    <span class="metric-desc">Lead-to-Call Response</span>
+                  </div>
+                  <div class="metric-pill">
+                    <span class="metric-num text-brand">-44%</span>
+                    <span class="metric-desc">Cost Per Acquired Job</span>
+                  </div>
+                </div>
+
+                <div class="card-hover-action">
+                  <button class="card-action-link" onclick="openTechDetailModal('landing-pages')">
+                    <span>Inspect Interactive Funnel Wireframe</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Tech Stack Integrations Strip -->
+        <div class="integrations-banner">
+          <div class="banner-title">NATIVE FIELD SERVICE MANAGEMENT (FSM) & CRM INTEGRATIONS:</div>
+          <div class="fsm-logos-grid">
+            <span class="fsm-pill"><i class="fa-solid fa-plug text-brand mr-2"></i> ServiceTitan</span>
+            <span class="fsm-pill"><i class="fa-solid fa-plug text-cyan mr-2"></i> Housecall Pro</span>
+            <span class="fsm-pill"><i class="fa-solid fa-plug text-amber mr-2"></i> Jobber</span>
+            <span class="fsm-pill"><i class="fa-solid fa-plug text-emerald mr-2"></i> CallRail DNI</span>
+            <span class="fsm-pill"><i class="fa-solid fa-plug text-brand mr-2"></i> HubSpot CRM</span>
+            <span class="fsm-pill"><i class="fa-solid fa-plug text-cyan mr-2"></i> Google LSA Webhooks</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 4. HYPERSCALE™ ENGINE: 4-Step Systematic Framework                        -->
+    <!-- ========================================================================= -->
+    <section class="section-spacing engine-section" id="engine">
+      <div class="container">
+        
+        <div class="section-header text-center max-w-3xl mx-auto">
+          <div class="section-pill">
+            <i class="fa-solid fa-gears text-brand"></i>
+            <span>REPRODUCIBLE GROWTH BLUEPRINT</span>
+          </div>
+          <h2 class="section-title">
+            The GROW <span class="text-gradient-brand">HyperScale™ Engine</span>
+          </h2>
+          <p class="section-desc">
+            How we take $1M-$3M contractors and scale them past $10M+ ARR while securing absolute dominance in their primary and secondary service territories.
+          </p>
+        </div>
+
+        <div class="engine-timeline">
+          
+          <!-- Step 1 -->
+          <div class="timeline-step">
+            <div class="step-marker">
+              <span class="step-num font-mono">01</span>
+              <div class="step-glow"></div>
+            </div>
+            <div class="step-body">
+              <div class="step-badge">WEEKS 1 - 2</div>
+              <h3 class="step-title">Territory Reconnaissance & Grid Lock</h3>
+              <p class="step-text">
+                We analyze your competitors' ad spend, map pack density, and high-ticket keyword gaps. We lock your exclusive metro radius so no competitor in your vertical can ever hire GROW.
+              </p>
+              <ul class="step-checklist">
+                <li><i class="fa-solid fa-check text-brand mr-2"></i> Complete 3-mile to 25-mile geo-grid rank audit</li>
+                <li><i class="fa-solid fa-check text-brand mr-2"></i> Territory exclusivity contract execution</li>
+                <li><i class="fa-solid fa-check text-brand mr-2"></i> High-ticket installation margin modeling</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="timeline-step">
+            <div class="step-marker">
+              <span class="step-num font-mono">02</span>
+              <div class="step-glow"></div>
+            </div>
+            <div class="step-body">
+              <div class="step-badge badge-cyan">WEEKS 2 - 4</div>
+              <h3 class="step-title">Headless High-Velocity Digital Stack</h3>
+              <p class="step-text">
+                We deploy your bespoke lightning-fast web infrastructure, programmatic suburb pages, and interactive estimation widgets connected straight to your dispatch line.
+              </p>
+              <ul class="step-checklist">
+                <li><i class="fa-solid fa-check text-cyan mr-2"></i> Sub-second Core Web Vitals buildout</li>
+                <li><i class="fa-solid fa-check text-cyan mr-2"></i> 40+ suburb programmatic landing pages</li>
+                <li><i class="fa-solid fa-check text-cyan mr-2"></i> Dynamic CallRail & CRM two-way sync</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="timeline-step">
+            <div class="step-marker">
+              <span class="step-num font-mono">03</span>
+              <div class="step-glow"></div>
+            </div>
+            <div class="step-body">
+              <div class="step-badge badge-amber">WEEKS 4 - 6</div>
+              <h3 class="step-title">High-Intent Traffic Matrix Activation</h3>
+              <p class="step-text">
+                Simultaneous launch of Google Guaranteed Local Services Ads (LSA), high-intent emergency search campaigns, and automated Google review acceleration funnels.
+              </p>
+              <ul class="step-checklist">
+                <li><i class="fa-solid fa-check text-amber mr-2"></i> Google Guaranteed badge verification & budget pacing</li>
+                <li><i class="fa-solid fa-check text-amber mr-2"></i> Negative keyword fortress to eliminate spam clicks</li>
+                <li><i class="fa-solid fa-check text-amber mr-2"></i> SMS-driven post-service 5-star review collector</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="timeline-step">
+            <div class="step-marker">
+              <span class="step-num font-mono">04</span>
+              <div class="step-glow"></div>
+            </div>
+            <div class="step-body">
+              <div class="step-badge badge-emerald">ONGOING SCALE</div>
+              <h3 class="step-title">Fleet Utilization & Profit Optimization</h3>
+              <p class="step-text">
+                Bi-weekly capacity matching: when your technicians have open truck slots, we surge demand in specific zip codes. When you’re at 100% capacity, we prioritize highest-margin replacements.
+              </p>
+              <ul class="step-checklist">
+                <li><i class="fa-solid fa-check text-emerald mr-2"></i> Live truck capacity pacing & demand throttling</li>
+                <li><i class="fa-solid fa-check text-emerald mr-2"></i> Bi-weekly executive ROI & cashflow review</li>
+                <li><i class="fa-solid fa-check text-emerald mr-2"></i> Multi-metro expansion playbook</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 5. VERIFIED CONTRACTOR RESULTS & LIVE CASE STUDIES                       -->
+    <!-- ========================================================================= -->
+    <section class="section-spacing case-studies-section" id="case-studies">
+      <div class="container">
+        
+        <div class="section-header text-center max-w-3xl mx-auto">
+          <div class="section-pill">
+            <i class="fa-solid fa-chart-line text-emerald"></i>
+            <span>PROVEN CONTRACTOR TRANSFORMATIONS</span>
+          </div>
+          <h2 class="section-title">
+            Real Proof from <span class="text-gradient-brand">Real Service Owners</span>
+          </h2>
+          <p class="section-desc">
+            See how HVAC, Roofing, and Plumbing contractors scaled their business valuations and added millions in verified signed contracts with GROW.
+          </p>
+        </div>
+
+        <div class="case-studies-grid">
+          
+          <!-- Case 1: Apex Roofing -->
+          <div class="case-card">
+            <div class="case-card-header">
+              <div class="case-author">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80" alt="Marcus Vance, Apex Roofing" class="case-avatar">
+                <div>
+                  <h4 class="case-name">Marcus Vance</h4>
+                  <p class="case-title">Owner, Apex Roofing & Solar (Dallas, TX)</p>
+                </div>
+              </div>
+              <span class="case-tag">Roofing / Storm Restoration</span>
+            </div>
+
+            <div class="case-body">
+              <p class="case-quote">
+                "Before GROW, we spent $18,000/month on generic lead agencies that handed the same homeowners to 4 other roofers. GROW built our own private lead machine. In 90 days, we had a 200% increase in local leads and closed $2.1M in storm claims."
+              </p>
+            </div>
+
+            <div class="case-metrics-footer">
+              <div class="case-metric">
+                <span class="metric-val text-brand">+200%</span>
+                <span class="metric-lbl">Lead Volume</span>
+              </div>
+              <div class="case-metric">
+                <span class="metric-val text-cyan">$2.1M</span>
+                <span class="metric-lbl">Signed Contracts</span>
+              </div>
+              <div class="case-metric">
+                <span class="metric-val text-emerald">9.4x</span>
+                <span class="metric-lbl">Marketing ROAS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case 2: Vanguard HVAC -->
+          <div class="case-card">
+            <div class="case-card-header">
+              <div class="case-author">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Elena Rodriguez, Vanguard HVAC" class="case-avatar">
+                <div>
+                  <h4 class="case-name">Elena Rodriguez</h4>
+                  <p class="case-title">Managing Director, Vanguard HVAC (Atlanta, GA)</p>
+                </div>
+              </div>
+              <span class="case-tag">HVAC Commercial & Residential</span>
+            </div>
+
+            <div class="case-body">
+              <p class="case-quote">
+                "Our summer season used to have terrifying dead weeks. GROW replaced our clunky WordPress site with their headless platform and dialed in our Google LSA. We added 4 new service vans and generated $1.42M in system replacements in under 4 months."
+              </p>
+            </div>
+
+            <div class="case-metrics-footer">
+              <div class="case-metric">
+                <span class="metric-val text-brand">$1.42M</span>
+                <span class="metric-lbl">New Pipeline</span>
+              </div>
+              <div class="case-metric">
+                <span class="metric-val text-cyan">+4 Vans</span>
+                <span class="metric-lbl">Fleet Expansion</span>
+              </div>
+              <div class="case-metric">
+                <span class="metric-val text-emerald">18 Days</span>
+                <span class="metric-lbl">Payback Period</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case 3: Titan Plumbing -->
+          <div class="case-card">
+            <div class="case-card-header">
+              <div class="case-author">
+                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&q=80" alt="Dave Kowalski, Titan Plumbing" class="case-avatar">
+                <div>
+                  <h4 class="case-name">Dave Kowalski</h4>
+                  <p class="case-title">Founder, Titan Plumbing & Drain (Denver, CO)</p>
+                </div>
+              </div>
+              <span class="case-tag">Plumbing & Sewer Relining</span>
+            </div>
+
+            <div class="case-body">
+              <p class="case-quote">
+                "The instant WhatsApp onboarding and 45-second call routing was a complete game changer. Homeowners with flooded basements don't fill out forms; they need help right now. We took the #1 spot in Denver in 42 days."
+              </p>
+            </div>
+
+            <div class="case-metrics-footer">
+              <div class="case-metric">
+                <span class="metric-val text-brand">#1 Rank</span>
+                <span class="metric-lbl">Google Map Pack</span>
+              </div>
+              <div class="case-metric">
+                <span class="metric-val text-cyan">-52%</span>
+                <span class="metric-lbl">Acquisition Cost</span>
+              </div>
+              <div class="case-metric">
+                <span class="metric-val text-emerald">320+</span>
+                <span class="metric-lbl">5-Star Reviews</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 6. INTERACTIVE TERRITORY EXCLUSIVITY CHECKER                             -->
+    <!-- ========================================================================= -->
+    <section class="section-spacing territory-section" id="territory-checker">
+      <div class="container">
+        <div class="territory-box">
+          <div class="territory-glow"></div>
+          
+          <div class="territory-content-grid">
+            
+            <div class="territory-text-col">
+              <div class="section-pill mb-3">
+                <i class="fa-solid fa-map-pin text-brand"></i>
+                <span>EXCLUSIVE CONTRACTOR PROTECTION</span>
+              </div>
+              <h2 class="territory-title">
+                Check Territory Exclusivity In Your Metro
+              </h2>
+              <p class="territory-desc">
+                We strictly partner with <strong>only one contractor per trade per metropolitan area</strong>. Once your market is locked, your competitors cannot hire GROW at any price.
+              </p>
+              
+              <div class="territory-perks">
+                <div class="perk-item">
+                  <i class="fa-solid fa-shield-check text-brand mr-2"></i>
+                  <span>Zero internal keyword competition or shared leads</span>
+                </div>
+                <div class="perk-item">
+                  <i class="fa-solid fa-shield-check text-brand mr-2"></i>
+                  <span>Protected 25-mile operational radius guarantee</span>
+                </div>
+                <div class="perk-item">
+                  <i class="fa-solid fa-shield-check text-brand mr-2"></i>
+                  <span>Right of first refusal on adjacent expansion counties</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="territory-form-col">
+              <div class="territory-form-card">
+                <h3 class="form-card-title">Live Territory Availability Tool</h3>
+                <p class="form-card-sub">Instant check against our active contractor database.</p>
+                
+                <form id="territoryCheckForm" onsubmit="handleTerritoryCheck(event)">
+                  <div class="form-group">
+                    <label for="territoryTrade" class="form-label">Your Trade Category</label>
+                    <select id="territoryTrade" class="form-select" required>
+                      <option value="">Select your service vertical...</option>
+                      <option value="HVAC">Heating & Air Conditioning (HVAC)</option>
+                      <option value="Roofing">Roofing, Siding & Gutters</option>
+                      <option value="Plumbing">Plumbing & Drain Services</option>
+                      <option value="Electrical">Electrical & Generators</option>
+                      <option value="Solar">Solar & Energy Storage</option>
+                      <option value="General">General Contracting / Remodeling</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="territoryZip" class="form-label">Primary City / Metro Area or ZIP Code</label>
+                    <div class="input-with-icon">
+                      <i class="fa-solid fa-location-crosshairs input-icon text-brand"></i>
+                      <input type="text" id="territoryZip" class="form-input pl-10" placeholder="e.g., Dallas, TX or 75001" required>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn btn-brand btn-block magnetic-btn" id="checkTerritoryBtn">
+                    <span>Verify My Territory Availability</span>
+                    <i class="fa-solid fa-satellite-dish ml-2"></i>
+                  </button>
+                </form>
+
+                <!-- Live Results Alert Box -->
+                <div id="territoryResultAlert" class="territory-result-box hidden" role="alert">
+                  <div class="result-status-row">
+                    <span class="live-dot pulse"></span>
+                    <strong id="resultStatusHeadline">TERRITORY PROVISIONALLY AVAILABLE</strong>
+                  </div>
+                  <p id="resultStatusText" class="result-body-text">
+                    Great news! No active contractor currently holds an exclusive license for your trade in this radius. Lock in your market before a competitor claims it.
+                  </p>
+                  <button type="button" class="btn btn-brand btn-sm btn-block mt-3" onclick="openOnboardingWithTerritory()">
+                    Claim This Territory Now <i class="fa-solid fa-arrow-right ml-1"></i>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 7. CONTRACTOR FAQ: Removing Friction & Doubts                             -->
+    <!-- ========================================================================= -->
+    <section class="section-spacing faq-section" id="faq">
+      <div class="container max-w-4xl">
+        
+        <div class="section-header text-center">
+          <div class="section-pill">
+            <i class="fa-solid fa-circle-question text-cyan"></i>
+            <span>TRANSPARENCY FIRST</span>
+          </div>
+          <h2 class="section-title">
+            Frequently Asked <span class="text-gradient-cyan">Questions</span>
+          </h2>
+          <p class="section-desc">
+            Direct answers to the questions successful home-service business owners ask before partnering with GROW.
+          </p>
+        </div>
+
+        <div class="faq-accordion" id="faqAccordion">
+          
+          <!-- Item 1 -->
+          <div class="faq-item active">
+            <button class="faq-question" aria-expanded="true">
+              <span>How does the 1-Contractor-Per-Metro Territory Exclusivity work?</span>
+              <i class="fa-solid fa-chevron-down faq-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Unlike generic marketing agencies that take on 15 competing roofers or HVAC companies in the same county and sell shared leads to whoever bids the highest, GROW strictly enforces exclusivity. When you partner with us for a designated 25-mile territory, we sign a legal non-compete clause guaranteeing we will not onboard, consult, or advertise any competing contractor in your trade within your radius.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do we own the website, landing pages, and digital assets?</span>
+              <i class="fa-solid fa-chevron-down faq-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes, 100%. All custom code, Google Analytics properties, Google Ads accounts, call tracking numbers, and creative assets belong exclusively to your business. We believe in earning your partnership every single month through measurable revenue performance, not holding your digital assets hostage.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How fast does the GROW HyperScale™ Engine generate booked jobs?</span>
+              <i class="fa-solid fa-chevron-down faq-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Paid traffic (Google LSA & Search Funnels) and high-converting landing page deployment typically produce high-intent inbound calls within the first 14 days of launch. Organic Local Map Pack dominance and programmatic suburb authority ramp between days 30 to 60 as local citation and review velocity compounds.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Why replace standard contact forms with Instant WhatsApp & Live Routing?</span>
+              <i class="fa-solid fa-chevron-down faq-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Data across 50,000+ contractor inbound leads reveals that a homeowner experiencing an AC breakdown or leaking roof calls the next contractor on Google if they don’t get an immediate response within 2 minutes. Outdated email contact forms have an 82% abandonment rate. Our instant WhatsApp and one-touch dispatch channels bridge homeowners directly to your live staff in under 45 seconds.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Does GROW integrate with ServiceTitan, Housecall Pro, or Jobber?</span>
+              <i class="fa-solid fa-chevron-down faq-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. We configure direct webhooks and API feeds to automatically inject inbound leads, call recordings, and attribution data directly into your Field Service Management (FSM) software, matching customer records without double manual entry.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 8. BOTTOM ENTERPRISE CTA SECTION                                         -->
+    <!-- ========================================================================= -->
+    <section class="bottom-cta-section">
+      <div class="container">
+        <div class="cta-banner-card">
+          <div class="cta-pattern" aria-hidden="true"></div>
+          
+          <div class="cta-inner text-center max-w-3xl mx-auto">
+            <div class="section-pill mb-4">
+              <span class="live-dot pulse"></span>
+              <span>DEPLOY YOUR GROWTH ENGINE</span>
+            </div>
+            <h2 class="cta-banner-title">
+              Ready to Dominate Your Local Market & Scale to Enterprise Revenue?
+            </h2>
+            <p class="cta-banner-desc">
+              Schedule your confidential 15-Minute Territory Audit. We will inspect your current website speed, analyze competitor spend, and show you exactly how many high-ticket jobs are being left on the table in your zip code.
+            </p>
+
+            <div class="cta-button-group">
+              <button class="btn btn-brand btn-xl magnetic-btn" onclick="openOnboardingModal('Bottom Banner Primary CTA')">
+                <span>Scale Your Business Today</span>
+                <i class="fa-solid fa-arrow-right ml-2"></i>
+              </button>
+              <a href="https://wa.me/18005554769?text=Hi%20GROW%20Team!%20I'd%20like%20to%20schedule%20a%20Territory%20Audit%20for%20my%20company." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-xl magnetic-btn">
+                <i class="fa-brands fa-whatsapp text-lg mr-2"></i>
+                <span>Direct WhatsApp Consultation</span>
+              </a>
+            </div>
+
+            <div class="cta-guarantees">
+              <span><i class="fa-solid fa-check text-brand mr-1"></i> No Long-Term Lock-in</span>
+              <span><i class="fa-solid fa-check text-brand mr-1"></i> Strict 1-Per-Metro Exclusivity</span>
+              <span><i class="fa-solid fa-check text-brand mr-1"></i> Full Asset Ownership</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- 9. FOOTER: Professional Enterprise Directory & Disclaimers                -->
+  <!-- ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-top-grid">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand-col">
+          <a href="#hero" class="brand-logo mb-4" aria-label="GROW Marketing Agency Home">
+            <div class="logo-mark">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+                <path d="M22 3L39 12.8V32.2L22 42L5 32.2V12.8L22 3Z" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" fill="rgba(8,12,20,0.8)" />
+                <rect x="12" y="24" width="4.5" height="10" rx="1.5" fill="rgba(255,255,255,0.3)" />
+                <rect x="19" y="18" width="4.5" height="16" rx="1.5" fill="#00E599" />
+                <rect x="26" y="12" width="4.5" height="22" rx="1.5" fill="#00E599" />
+                <path d="M12 21L21.5 11.5L28 18L35 7" stroke="#00E599" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M30 7H35V12" stroke="#00E599" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="logo-typography">
+              <div class="logo-main-text text-white">GROW<span class="logo-dot">.</span></div>
+              <span class="logo-sub-text">MARKETING AGENCY</span>
+            </div>
+          </a>
+          <p class="footer-text">
+            GROW Marketing Agency is the premier growth engineering partner for high-performing US home-service contractors and SMBs. We build scalable customer acquisition infrastructure that scales business valuations.
+          </p>
+          <div class="footer-contact-pills">
+            <div class="contact-pill"><i class="fa-solid fa-location-dot text-brand mr-2"></i> Austin · Dallas · Atlanta · Denver</div>
+            <div class="contact-pill"><i class="fa-solid fa-phone text-cyan mr-2"></i> 1-800-GROW-HQ (1-800-476-9477)</div>
+            <div class="contact-pill"><i class="fa-solid fa-envelope text-emerald mr-2"></i> partners@growmarketingagency.com</div>
+          </div>
+        </div>
+
+        <!-- Col 2: High-Ticket Trade Solutions -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Trade Verticals</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">HVAC Growth Engine</a></li>
+            <li><a href="#hero">Roofing & Storm Restoration</a></li>
+            <li><a href="#hero">Plumbing & Trenchless Sewer</a></li>
+            <li><a href="#hero">Electrical & Generator Power</a></li>
+            <li><a href="#hero">Solar & Battery Storage</a></li>
+            <li><a href="#hero">Commercial Contracting</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Tech Infrastructure -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Digital Infrastructure</h4>
+          <ul class="footer-links">
+            <li><a href="#tech-showcase">Headless Sub-Second Web Builds</a></li>
+            <li><a href="#tech-showcase">Local 3-Pack Map Domination</a></li>
+            <li><a href="#tech-showcase">Google LSA Guaranteed Funnels</a></li>
+            <li><a href="#tech-showcase">Dynamic DNI Call Routing</a></li>
+            <li><a href="#roi-calculator">Interactive ROI Estimator</a></li>
+            <li><a href="#territory-checker">Territory Exclusivity Lookup</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Operations & Trust -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Trust & Security</h4>
+          <div class="footer-trust-box">
+            <div class="trust-item"><i class="fa-solid fa-shield-halved text-brand"></i> SOC2 Compliant Data Infrastructure</div>
+            <div class="trust-item"><i class="fa-solid fa-lock text-cyan"></i> HIPAA & TCPA Compliant Call Tracking</div>
+            <div class="trust-item"><i class="fa-solid fa-certificate text-amber"></i> Google Premier Partner Agency 2026</div>
+          </div>
+          <div class="footer-socials">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Copyright & Legal -->
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="currentYear">2026</span> GROW Marketing Agency LLC. All rights reserved. GROW HyperScale™ is a registered service mark.
+        </p>
+        <div class="footer-legal-links">
+          <a href="#">Territory Protection Policy</a>
+          <span class="sep">•</span>
+          <a href="#">Privacy Agreement</a>
+          <span class="sep">•</span>
+          <a href="#">Terms of Infrastructure</a>
+          <span class="sep">•</span>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- 10. FLOATING WHATSAPP / LIVE CHAT CLIENT ONBOARDING DOCK                  -->
+  <!-- ========================================================================= -->
+  <div class="floating-dock-container" id="floatingDock">
+    
+    <!-- Collapsed Floating Trigger Button -->
+    <div class="dock-launcher-wrap">
+      <div class="dock-speech-bubble" id="dockSpeechBubble">
+        <span class="bubble-live-dot"></span>
+        <span class="bubble-text">Need high-margin jobs? <strong>Chat with Director</strong></span>
+        <button class="bubble-close-btn" onclick="dismissSpeechBubble(event)" aria-label="Close message">×</button>
+      </div>
+
+      <button class="floating-chat-trigger" id="dockTriggerBtn" onclick="toggleOnboardingDrawer()" aria-label="Open Instant Contractor Onboarding Chat" aria-expanded="false">
+        <span class="launcher-pulse"></span>
+        <div class="launcher-icon-wrap">
+          <i class="fa-brands fa-whatsapp launcher-icon whatsapp-icon"></i>
+          <i class="fa-solid fa-bolt launcher-icon bolt-icon"></i>
+          <i class="fa-solid fa-xmark launcher-icon close-icon"></i>
+        </div>
+        <span class="notification-badge">1</span>
+      </button>
+    </div>
+
+    <!-- Slide-Up Onboarding Drawer / Terminal -->
+    <div class="onboarding-drawer" id="onboardingDrawer" aria-hidden="true" role="dialog" aria-labelledby="drawerTitle">
+      <div class="drawer-header">
+        <div class="drawer-header-info">
+          <div class="drawer-avatar-wrap">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Sarah - Territory Growth Director" class="drawer-avatar">
+            <span class="online-status-dot"></span>
+          </div>
+          <div>
+            <h3 class="drawer-agent-name" id="drawerTitle">Sarah Vance</h3>
+            <p class="drawer-agent-role">Director of Contractor Growth · Online</p>
+          </div>
+        </div>
+        <button class="drawer-close-btn" onclick="toggleOnboardingDrawer()" aria-label="Close instant onboarding drawer">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="drawer-body">
+        
+        <!-- Live Terminal Chat Feed -->
+        <div class="drawer-chat-bubble agent-bubble">
+          <p>
+            👋 Welcome to <strong>GROW Marketing Agency</strong>! Ready to lock in your metro territory and eliminate dry weeks?
+          </p>
+          <span class="bubble-timestamp">Just now · Average reply &lt; 90 seconds</span>
+        </div>
+
+        <div class="drawer-chat-bubble agent-bubble mt-2">
+          <p>
+            Choose your trade below to verify territory availability or connect directly on WhatsApp:
+          </p>
+        </div>
+
+        <!-- Interactive Quick-Response Trade Grid -->
+        <div class="drawer-trade-options" id="drawerTradeButtons">
+          <button type="button" class="drawer-trade-pill" onclick="selectDrawerTrade('HVAC')">
+            <i class="fa-solid fa-fan text-brand mr-1"></i> HVAC
+          </button>
+          <button type="button" class="drawer-trade-pill" onclick="selectDrawerTrade('Roofing')">
+            <i class="fa-solid fa-house-chimney text-cyan mr-1"></i> Roofing
+          </button>
+          <button type="button" class="drawer-trade-pill" onclick="selectDrawerTrade('Plumbing')">
+            <i class="fa-solid fa-faucet-drip text-emerald mr-1"></i> Plumbing
+          </button>
+          <button type="button" class="drawer-trade-pill" onclick="selectDrawerTrade('Electrical')">
+            <i class="fa-solid fa-bolt text-amber mr-1"></i> Electrical
+          </button>
+        </div>
+
+        <!-- Dynamic Form Fields inside Drawer -->
+        <form id="drawerOnboardingForm" class="drawer-form mt-3" onsubmit="handleDrawerSubmit(event)">
+          <div class="drawer-field">
+            <label for="drawerCompanyInput" class="drawer-label">Company Name & Service Metro</label>
+            <input type="text" id="drawerCompanyInput" class="drawer-input" placeholder="e.g. Apex Mechanical · Dallas, TX" required>
+          </div>
+
+          <div class="drawer-field">
+            <label for="drawerPhoneInput" class="drawer-label">Owner / Dispatch Phone (for WhatsApp)</label>
+            <input type="tel" id="drawerPhoneInput" class="drawer-input" placeholder="(555) 000-0000" required>
+          </div>
+
+          <!-- Direct Action Buttons -->
+          <div class="drawer-cta-stack mt-3">
+            <button type="submit" class="btn btn-whatsapp btn-block" id="drawerWhatsAppSubmitBtn">
+              <i class="fa-brands fa-whatsapp text-lg mr-2"></i>
+              <span>Launch Instant WhatsApp Chat</span>
+            </button>
+            <button type="button" class="btn btn-brand btn-block mt-2" onclick="openDirectCalendarAudit()">
+              <i class="fa-solid fa-calendar-check mr-2"></i>
+              <span>Schedule 15-Min Executive Audit</span>
+            </button>
+            <a href="tel:18004769477" class="drawer-phone-link mt-2">
+              <i class="fa-solid fa-phone mr-1"></i> Or call emergency desk: 1-800-GROW-HQ
+            </a>
+          </div>
+        </form>
+
+      </div>
+
+      <div class="drawer-footer">
+        <i class="fa-solid fa-shield-halved text-brand mr-1"></i>
+        <span>100% Confidential · Strict Metro Exclusivity Enforced</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- 11. GLOBAL ONBOARDING MODAL (Triggered by CTAs & Calculator)               -->
+  <!-- ========================================================================= -->
+  <div class="modal-backdrop" id="onboardingModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalHeaderTitle">
+    <div class="modal-card">
+      <button class="modal-close-btn" onclick="closeOnboardingModal()" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-header">
+        <div class="section-pill mb-2">
+          <span class="live-dot pulse"></span>
+          <span>ENTERPRISE CONTRACTOR ONBOARDING</span>
+        </div>
+        <h3 class="modal-title" id="modalHeaderTitle">
+          Scale Your Business with <span class="text-gradient-brand">GROW</span>
+        </h3>
+        <p class="modal-sub" id="modalSubText">
+          Complete the quick form below. Our Territory Director will review your market within 30 minutes.
+        </p>
+      </div>
+
+      <!-- Pre-populated Calculation Snapshot Box (If triggered from ROI calculator) -->
+      <div id="modalCalculationSummary" class="modal-calc-summary hidden">
+        <div class="summary-badge"><i class="fa-solid fa-calculator text-brand mr-1"></i> Calculated Projection Attached:</div>
+        <div class="summary-stats-grid">
+          <div>
+            <span class="lbl">12-Mo Net Growth:</span>
+            <span class="val font-mono text-brand" id="modalAnnualVal">$428,400</span>
+          </div>
+          <div>
+            <span class="lbl">Monthly Lift:</span>
+            <span class="val font-mono text-cyan" id="modalMonthlyVal">+$35,700/mo</span>
+          </div>
+          <div>
+            <span class="lbl">Projected ROI:</span>
+            <span class="val font-mono text-emerald" id="modalRoiVal">11.4x</span>
+          </div>
+        </div>
+      </div>
+
+      <form id="globalOnboardingForm" class="modal-form" onsubmit="handleGlobalModalSubmit(event)">
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="modalFullName" class="form-label">Owner / Executive Name</label>
+            <input type="text" id="modalFullName" class="form-input" placeholder="e.g. Marcus Vance" required>
+          </div>
+          <div class="form-group">
+            <label for="modalCompany" class="form-label">Contractor Business Name</label>
+            <input type="text" id="modalCompany" class="form-input" placeholder="e.g. Apex Heating & Air" required>
+          </div>
+        </div>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="modalPhone" class="form-label">Direct Cell / WhatsApp Phone</label>
+            <input type="tel" id="modalPhone" class="form-input" placeholder="(555) 000-0000" required>
+          </div>
+          <div class="form-group">
+            <label for="modalEmail" class="form-label">Work Email</label>
+            <input type="email" id="modalEmail" class="form-input" placeholder="marcus@apexair.com" required>
+          </div>
+        </div>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="modalTradeSelect" class="form-label">Primary Trade Vertical</label>
+            <select id="modalTradeSelect" class="form-select" required>
+              <option value="HVAC">Heating & Air Conditioning (HVAC)</option>
+              <option value="Roofing">Roofing & Exterior Restoration</option>
+              <option value="Plumbing">Plumbing & Trenchless Drain</option>
+              <option value="Electrical">Electrical, Generator & EV</option>
+              <option value="Solar">Solar & Clean Energy</option>
+              <option value="General">General Contracting / Home Remodeling</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="modalRevenueSelect" class="form-label">Current Annual Revenue</label>
+            <select id="modalRevenueSelect" class="form-select" required>
+              <option value="500k-1M">$500,000 - $1,000,000</option>
+              <option value="1M-3M" selected>$1,000,000 - $3,000,000</option>
+              <option value="3M-5M">$3,000,000 - $5,000,000</option>
+              <option value="5M-10M">$5,000,000 - $10,000,000</option>
+              <option value="10M+">$10,000,000+ (Multi-Market Enterprise)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="modalTerritoryCity" class="form-label">Target Service Territory / Metro Area</label>
+          <input type="text" id="modalTerritoryCity" class="form-input" placeholder="e.g. Greater Dallas-Fort Worth Metro (30-mile radius)" required>
+        </div>
+
+        <!-- Submit Actions -->
+        <div class="modal-action-row">
+          <button type="submit" class="btn btn-brand btn-lg btn-block magnetic-btn" id="modalSubmitBtn">
+            <span>Confirm Territory Audit & Onboard</span>
+            <i class="fa-solid fa-bolt ml-2"></i>
+          </button>
+        </div>
+
+        <div class="modal-footer-notes">
+          <div class="note-item"><i class="fa-solid fa-lock text-brand mr-1"></i> Strict non-disclosure & territory lock</div>
+          <div class="note-item"><i class="fa-brands fa-whatsapp text-emerald mr-1"></i> Direct WhatsApp dispatch available</div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Tech Detail Deep Dive Modal (For White-Label Tech Showcase) -->
+  <div class="modal-backdrop" id="techDetailModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card tech-modal-card">
+      <button class="modal-close-btn" onclick="closeTechDetailModal()" aria-label="Close tech details modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="techDetailContent">
+        <!-- Content injected dynamically via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>
